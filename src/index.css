@@ -49,3 +49,28 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+.contact-form-wrapper {
+  width: 100%;
+  max-width: 1280px; /* For larger screens */
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .contact-form-wrapper {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-form-wrapper {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-form-wrapper {
+    padding: 0 3rem;
+  }
+}

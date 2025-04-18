@@ -1,96 +1,84 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
-  const frontendSkills = ["React", "JavaScript", "TailwindCSS"];
-  const backendSkills = ["Node.js", "Java", "AWS", "MYSQL", "GraphQL"];
-
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-screen flex items-center justify-center py-20 px-4 sm:px-6 md:px-8 lg:px-12"
     >
       <RevealOnScroll>
-        <div className="max-w-3xl mx-auto px-4">
+        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            {" "}
-            About Me{" "}
+            About Me
           </h2>
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-            <p className="tect-gray-300 mb-6">
-              Passionate developer with expertise in building sclable web
-              applications and creating innovative solutions.
+            <p className="text-gray-300 mb-6">
+              Passionate Java Full Stack Developer with 5+ years of experience
+              in designing, developing, and deploying scalable and secure
+              applications. I specialize in building robust RESTful and GraphQL
+              APIs using Java, Spring Boot, and Spring MVC. I have expertise in
+              deploying containerized microservices on Azure Kubernetes Service
+              (AKS) and implementing automated CI/CD workflows with Docker and
+              Jenkins. I'm adept at ensuring high code quality, leveraging Redis
+              for caching, and MongoDB for efficient data storage. I also have a
+              strong background in security, compliance, and monitoring systems
+              for seamless, secure, and scalable software solutions.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold md-4"> Frontend</h3>
-                <div className="flex flex-wrap gap-2">
-                  {frontendSkills.map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
-                hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+              <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+                <h3 className="text-xl font-bold mb-4"> 🎓 Education </h3>
+                <ul className="list-disc list-inside text-gray-300 space-y-2">
+                  <li>
+                    <strong> Master in Data Science </strong> Duquesne
+                    University, USA (2022-2024)
+                  </li>
+                  <li>
+                    <strong> Bachelor in Computer Science </strong> JNTUH, India
+                    (2016-2020)
+                  </li>
+                  <li>Relevant Coursework: Database, Web Development...</li>
+                </ul>
               </div>
-
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold md-4"> Backend</h3>
-                <div className="flex flex-wrap gap-2">
-                  {backendSkills.map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
-                hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>
-                  <strong> Masters in Computer Science </strong> Duquesne
-                  University USA (2022-2024)
-                </li>
-                <li>
-                  <strong> Bachelor of technology </strong> JNTUH India
-                  (2016-2020)
-                </li>
-                <li>Relevant Coursework: Database, Web Development... </li>
-              </ul>
-            </div>
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
-              <div className="space-y-4 text-gray-300">
-                <div>
-                  <h4 className="font-semibold">
-                    Full Stack developer at Morgan Stanley (2023 - Present)
-                  </h4>
-                  <p>
-                    Developed and maintained microservices for financial
-                    applications.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold">
-                    Full Stack developer at Bitinfocom (2020-2022)
-                  </h4>
-                  <p>
-                    Developed scalable microservices, optimized AWS deployment,
-                    secured APIs with Spring Security, and built dynamic UIs
-                    with React.
-                  </p>
+              <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+                <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
+                <div className="space-y-4 text-gray-300">
+                  <div>
+                    <h4 className="font-semibold">
+                      Full Stack Developer at Morgan Stanley (2023 - Present)
+                    </h4>
+                    <p>
+                      Developed and maintained secure RESTful and GraphQL APIs
+                      for financial applications, deployed microservices on
+                      Azure Kubernetes, and automated CI/CD pipelines using
+                      Docker and Jenkins, achieving improved deployment time and
+                      system reliability.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">
+                      Full Stack Developer at Cognizant (2020 - 2022)
+                    </h4>
+                    <p>
+                      Led the development of healthcare applications with a
+                      focus on RESTful APIs, microservices, security with Spring
+                      Security, and integrating HL7 and FHIR standards for data
+                      exchange. Utilized Docker for containerization and CI/CD
+                      with Jenkins for seamless deployment.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">
+                      Java Developer at Accenture (2018 - 2020)
+                    </h4>
+                    <p>
+                      Designed and implemented scalable microservices using
+                      Spring Boot, optimized SQL queries for high-performance
+                      transactions, and utilized Elasticsearch and Redis for
+                      caching and real-time log monitoring.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
